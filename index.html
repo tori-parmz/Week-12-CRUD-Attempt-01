@@ -6,14 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Builder App</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
-<body class="container">
-    <div id="new-house" class="jumbotron">
-        <h2>New Menu Category</h2>
-        <input type="text" id="new-house-name" class="form-control"><br>
-        <button id="create-new-house" class="btn btn-primary">Create</button>
+<body>
+    <div class="container-fluid">
+        <img src="site-images/header-image.jpg" class="img-fluid" id="header-image">
 
+    </div><br>
+    
+    <div class="container">
+    <div id="menu-item-form" class="jumbotron">
+        <h2 class="display-4">New Menu Item</h2><br>
+        <div class="form-group col-md-10">
+        <label for="new-house-name">Item Name</label>
+        <input type="text" id="new-house-name" class="form-control">
+    </div>
+        <div class="form-group col-md-2">
+            <label for="inputPrice">Price</label>
+            <input type="text" class="form-control" id="inputPrice" placeholder="$0.00">
+          </div><br>
+        <div class="form-group col-md-12">
+            <label for="exampleFormControlSelect1">Menu Category</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Appetizers</option>
+              <option>Salads</option>
+              <option>Entrees</option>
+              <option>Desserts</option>
+              <option>Drinks</option>
+            </select>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group col-md-12">
+        <button id="create-new-house" class="btn btn-success">Create</button>
+    </div>
+
+    </div>
     </div>
     <div id="app">
 
